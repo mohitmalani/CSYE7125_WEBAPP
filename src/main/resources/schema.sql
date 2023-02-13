@@ -1,0 +1,3 @@
+-- create table if not exists Lists(id uuid PRIMARY KEY NOT NULL,first_name text,
+--                                      last_name text, password text, username text unique, account_created timestamp,
+--                                      account_updated timestamp);

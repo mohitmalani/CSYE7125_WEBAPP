@@ -1,0 +1,27 @@
+cloud:
+  aws:
+    stack:
+      auto: false
+
+
+logging:
+  level:
+    com:
+      amazonaws:
+        util:
+          EC2MetadataUtils: error
+
+management:
+  endpoint:
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: prometheus
+
+#application:
+#  bucket:
+#    name: ${s3_bucket_name}
